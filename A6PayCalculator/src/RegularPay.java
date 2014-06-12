@@ -8,9 +8,10 @@ public class RegularPay extends PayCalculator {
 	}
 
 	@Override
-	public BigDecimal computePay() {
+	public BigDecimal computePay(float hour) {
 		// TODO Auto-generated method stub
-		return null;
+		return (payRate.multiply(new BigDecimal(hour)));
 	}
+
 
 }

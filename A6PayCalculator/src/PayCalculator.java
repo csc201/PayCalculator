@@ -7,11 +7,6 @@ public abstract class PayCalculator {
 	public PayCalculator(BigDecimal payRate) {
 		this.payRate = payRate;
 	}
-	public abstract BigDecimal computePay();
-	
-	public BigDecimal computePay(BigDecimal factor) {
-		return (this.payRate.multiply(factor));
-	}
-	
-	
+	public abstract BigDecimal computePay(float hour);
+
 }
